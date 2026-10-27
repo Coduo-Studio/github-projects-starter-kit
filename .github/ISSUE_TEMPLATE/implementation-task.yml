@@ -1,0 +1,52 @@
+name: Implementation task
+description: Define a bounded change for a person or coding agent.
+title: "Task: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form once the problem is understood. A filled form still needs a readiness review.
+        Add the issue to your GitHub Project and set Status, Priority, and Size there.
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: Describe the observable behavior this change should produce.
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current behavior
+      description: Describe what happens today and how to observe it.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Write checkable results. These become the review checklist.
+      placeholder: |
+        - [ ] Given…, when…, then…
+        - [ ] The relevant failure case behaves as follows…
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and boundaries
+      description: Name the included changes and any work intentionally left for another issue.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Relevant context and dependencies
+      description: Link related issues, design decisions, and relevant code. Name unresolved dependencies explicitly.
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification
+      description: Name existing checks and manual steps. If unknown, say what needs to be established before work starts.
+    validations:
+      required: true

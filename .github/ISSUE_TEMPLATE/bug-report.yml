@@ -1,0 +1,44 @@
+name: Bug report
+description: Report a reproducible problem.
+title: "Bug: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe one problem. Remove secrets and personal data from logs and screenshots.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the actual behavior and who it affects.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open…
+        2. Choose…
+        3. Observe…
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should happen after the same steps?
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Include the relevant app version, browser, operating system, or commit.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and context
+      description: Add sanitized logs, screenshots, frequency, or a related issue. If reproduction is unreliable, explain what you have tried.

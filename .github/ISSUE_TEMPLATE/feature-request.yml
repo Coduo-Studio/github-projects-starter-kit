@@ -1,0 +1,35 @@
+name: Feature request
+description: Describe a user problem and a possible improvement.
+title: "Feature: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem
+      description: Who is trying to do what, and what gets in their way?
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Concrete example
+      description: Describe a real situation where this would help.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: What should the user be able to do afterward?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and current workaround
+      description: What can someone do today? Include simpler options you considered.
+  - type: textarea
+    id: questions
+    attributes:
+      label: Open questions
+      description: List decisions still needed before this is ready to implement.
